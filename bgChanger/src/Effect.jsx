@@ -11,7 +11,7 @@ function Timer() {
     setTimeout(() => {
       setCounter((counter) => counter + 1);
     }, 1000);
-  });
+  }, [counter]);
 
   return <h2>Current Time: {counter}</h2>;
 }
